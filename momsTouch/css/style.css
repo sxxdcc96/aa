@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+* {box-sizing: border-box;}
+
+.inner {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 40px;
+}
+p {
+    color: rgb(109, 109, 109);
+    padding: 2% 0;
+}
+.desc {
+    width: 60%;
+}
+/* COMMON ------------------------------------------------------ */
+
+
+
+#sect1 {
+    height: 100vh;
+    overflow: hidden;
+}
+#sect1 video {
+    width: 100%;
+}
+/* SECT1 ------------------------------------------------------ */
+
+
+#sect2 {
+    background-color: #e7e0c2;
+    padding: 5%;
+}
+#sect2 img {
+    border-radius: 50%;
+    width: 100%;
+    border: 10px solid #83dde3;
+}
+#sect2 button {
+    background-color: #83dde3;
+    color: #ffffff;
+}
+/* SECT2 ------------------------------------------------------ */
+
+
+#sect3 {
+    padding: 5%;
+}
+#sect3 img {
+    border-radius: 50%;
+    width: 100%;
+    border: 10px solid #e7e0c2;
+}
+#sect3 button {
+    background-color: #e7e0c2;
+}
+/* SECT3 ------------------------------------------------------ */
+
+
+#sect4 {
+    background-color: #e7e0c2;
+    padding: 0 5% 5% 5%;
+}
+#sect4 .sideMenu {
+    width: 33.3333%;
+    text-align: center;
+}
+#sect4 img {
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid #83dde3;
+}
+#sect4 button {
+    background-color: #83dde3;
+    color: #ffffff;
+}
+#sect4 h2, #sect4 b {
+    text-align: center;
+    display: block;
+}
+#sect4 h2 {
+    padding-top: 50px;
+}
+#sect4 b {
+    margin: 0 0 2% 0;
+}
+/* SECT4 ------------------------------------------------------ */
+
+
+footer {
+    background-color: #000000;
+}
+footer p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+/* FOOTER ------------------------------------------------------ */
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    .inner {
+        display: block;
+    }
+    .desc {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .desc p {
+        display: none;
+    }
+    /* COMMON ------------------------------------------------------ */
+
+
+
+    #sect1 {
+        height: 34vh;
+    }
+    /* SECT1 ------------------------------------------------------ */
+    /* SECT2 ------------------------------------------------------ */
+    /* SECT3 ------------------------------------------------------ */
+
+
+    #sect4 {
+        width: 100%;
+    }
+    #sect4 .inner {
+        display: flex;
+        width: 100%;
+    }
+
+    #sect4 h2 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    #sect4 p {
+        display: none;
+    }
+    #sect4 button {
+        padding: 5px 10px;
+    }
+    /* SECT4 ------------------------------------------------------ */
+    /* FOOTER ------------------------------------------------------ */
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px) {
+    /* COMMON ------------------------------------------------------ */
+
+
+
+    #sect1 {
+        height: 53vh;
+    }
+    /* SECT1 ------------------------------------------------------ */
+
+
+    #sect2 .desc p:nth-child(3) {
+        display: none;
+    }
+    /* SECT2 ------------------------------------------------------ */
+
+
+    #sect3  .desc {
+        /* order: -1; */
+    }
+    /* SECT3 ------------------------------------------------------ */
+    /* SECT4 ------------------------------------------------------ */
+    /* FOOTER ------------------------------------------------------ */
+}
+
+/* 데스크탑 */
+@media screen and (min-width:1288px) {
+    /* COMMON ------------------------------------------------------ */
+
+
+    
+    #sect1 {
+        height: 100vh;
+    }
+    /* SECT1 ------------------------------------------------------ */
+
+
+    #sect2 .desc p:nth-child(3) {
+        display: block;
+    }
+    /* SECT2 ------------------------------------------------------ */
+    /* SECT3 ------------------------------------------------------ */
+    /* SECT4 ------------------------------------------------------ */
+    /* FOOTER ------------------------------------------------------ */
+}
