@@ -149,10 +149,16 @@ footer p {
         padding-top: 20px;
     }
 
+    #sect4 h3 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
     #sect4 p {
         display: none;
     }
     #sect4 button {
+        font-size: 16px;
         padding: 5px 10px;
     }
     /* SECT4 ------------------------------------------------------ */
@@ -178,7 +184,7 @@ footer p {
 
 
     #sect3  .desc {
-        /* order: -1; */
+        order: -1;
     }
     /* SECT3 ------------------------------------------------------ */
     /* SECT4 ------------------------------------------------------ */
