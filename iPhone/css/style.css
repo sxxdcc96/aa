@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+* {box-sizing: border-box;}
+
+#sect1 {
+    position: relative;
+}
+#sect1 .bg {
+    background-image: url(../images/family_photo-1920x1024.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sect1 .desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sect1 .desc h1 {
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+/* SECT1 --------------------------------------------------------- */
+
+#sect2 {
+    text-align: center;
+    padding-top: 5%;
+}
+#sect2 h2 {
+    font-size: 50px;
+}
+#sect2>p {
+    color: #8f8f8f;
+    font-size: 20px;
+}
+#sect2 .flexBox {
+    display: flex;
+}
+#sect2 figure {
+    width: 30%;
+    margin: auto;
+}
+#sect2 img {
+    width: 100%;
+}
+#sect2 .desc {
+    font-style: italic;
+}
+/* SECT2 --------------------------------------------------------- */
+
+#sect3 {
+    padding-top: 5%;
+}
+#sect3 .bg {
+    background-image: url(../images/4k-apple-logo-metal-grid-art-apple.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#sect3 .flexBox {
+    display: flex;
+    margin-top: 10%;
+}
+#sect3 .desc {
+    width: 50%;
+    text-align: center;
+    padding-top: 8%;
+}
+#sect3 h2 {
+    font-size: 50px;
+}
+#sect3 b {
+    display: block;
+    margin: 1% 0 3% 0;
+}
+#sect3 p {
+    margin: auto;
+}
+#sect3 figure {
+    width: 50%;
+}
+#sect3 img {
+    width: 100%;
+}
+/* SECT3 --------------------------------------------------------- */
+
+#sect4 {
+    height: 100vh;
+}
+#sect4 .bg {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 30vh;
+    margin-top: 10%;
+}
+#sect4 .flexBox {
+    display: flex;
+    margin-top: 10%;
+}
+#sect4 figure {
+    width: 50%;
+    margin: 4% 0 0 6%;
+}
+#sect4 video {
+    width: 50%;
+}
+/* SECT4 --------------------------------------------------------- */
+
+footer {
+    height: 100px;
+    background-color: #000000;
+    margin-top: 10%;
+    color: #ffffff;
+}
+/* FOOTER --------------------------------------------------------- */
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+
+    #sect1 .bg {
+        height: 50vh;
+    }
+    #sect1 .desc {
+        width: 85%;
+    }
+    #sect1 .desc h1 {
+        font-size: 40px;
+    }
+    /* SECT1 --------------------------------------------------------- */
+
+    #sect2 h2 {
+        font-size: 30px;
+    }
+    #sect2>p {
+        font-size: 16px;
+    }
+    #sect2 .flexBox {
+        display: block;
+    }
+    #sect2 figure {
+        width: 50%;
+    }
+    #sect2 .desc {
+        display: none;
+    }
+    /* SECT2 --------------------------------------------------------- */
+
+    #sect3 .bg {
+        height: 30vh;
+    }
+    #sect3 .flexBox {
+        display: block;
+    }
+    #sect3 .desc {
+        width: 100%;
+        margin: 10% 0;
+        padding: 0 5%;
+    }
+    #sect3 .desc h2 {
+        font-size: 30px;
+    }
+    #sect3 .desc b {
+        font-size: 14px;
+        margin: 0 0 2% 0;
+    }
+    #sect3 .desc p {
+        font-size: 16px;
+    }
+    #sect3 figure {
+        width: 100%;
+    }
+    /* SECT3 --------------------------------------------------------- */
+    /* SECT4 --------------------------------------------------------- */
+    /* FOOTER --------------------------------------------------------- */
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px) {
+
+    #sect1 .bg {
+        height: 100vh;
+        background-attachment: fixed;
+    }
+    #sect1 .desc {
+        width: 50%;
+    }
+    #sect1 .desc h1 {
+        font-size: 60px;
+    }
+    /* SECT1 --------------------------------------------------------- */
+    /* SECT2 --------------------------------------------------------- */
+
+    #sect3 .bg {
+        height: 60vh;
+    }
+    #sect3 p {
+        width: 70%;
+    }
+    /* SECT3 --------------------------------------------------------- */
+    /* SECT4 --------------------------------------------------------- */
+    /* FOOTER --------------------------------------------------------- */
+}
+
+/* 데스크탑 */
+@media screen and (min-width:1288px) {
+
+    #sect1 .bg {
+        height: 100vh;
+    }
+    #sect1 .desc {
+        width: 50%;
+    }
+    /* SECT1 --------------------------------------------------------- */
+    /* SECT2 --------------------------------------------------------- */
+    /* SECT3 --------------------------------------------------------- */
+    /* SECT4 --------------------------------------------------------- */
+    /* FOOTER --------------------------------------------------------- */
+}
