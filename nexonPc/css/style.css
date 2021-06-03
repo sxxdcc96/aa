@@ -3,18 +3,125 @@
 
 * {box-sizing: border-box;}
 
+body {
+    background-color: rgb(230, 230, 230);
+}
+header {
+    height: 100px;
+    background-color: antiquewhite;
+    margin-bottom: 2%;
+}
+.wrap {
+    /* border: 1px solid #000; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+
+#sect1 {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+#sect1 .bg {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#sect1 .desc {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    color: #ffffff;
+    left: 3%;
+    cursor: pointer;
+}
+#sect1 .bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000098;
+    position: absolute;
+    /* display: none; */
+}
+#sect1 .notice h2 {
+    font-size: 25px;
+}
+#sect1 .row5 {
+    padding: 2%;
+    border: 1px solid #000;
+}
+#sect1 .row5 li {
+    margin: 2% 0;
+    border-bottom: 1px solid #000000;
+}
+#sect1 .row5 p {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+#sect1 .row5 span {
+    float: right;
+}
+#sect1 .row1 {
+    background-image: url(../images/sect1\ \(1\).jpg);
+}
+#sect1 .row2 {
+    background-image: url(../images/sect1\ \(1\).png);
+}
+#sect1 .row3 {
+    background-image: url(../images/sect1\ \(2\).png);
+}
+#sect1 .row4 {
+    background-image: url(../images/sect1\ \(3\).png);
+}
+#sect1 .row5 {
+    width: 400px;
+    margin-bottom: 10px;
+}
+#sect1 .row6 {
+    background-image: url(../images/sect1\ \(4\).png);
+}
+#sect1 .row7 {
+    background-image: url(../images/sect1\ \(5\).png);
+}
+#sect1 .row8 {
+    background-image: url(../images/sect1\ \(6\).png);
+}
+#sect1 .row9 {
+    width: 400px;
+    margin-bottom: 10px;
+    background-image: url(../images/bg_customer_center.gif);
+    /* background-size: cover; */
+    background-position-x: -30px;
+}
+#sect1 .row9:hover {
+    background-position-y: -206px;
+}
+#sect1 .row10 {
+    background-image: url(../images/sect1\ \(7\).png);
+}
 /* SECT1 --------------------------------------------------------- */
+#sect2 {
+    width: 40%;
+}
 /* SECT2 --------------------------------------------------------- */
-/* SECT3 --------------------------------------------------------- */
-/* SECT4 --------------------------------------------------------- */
 /* FOOTER --------------------------------------------------------- */
 
 /* 모바일 */
 @media screen and (max-width:767px) {
     /* SECT1 --------------------------------------------------------- */
     /* SECT2 --------------------------------------------------------- */
-    /* SECT3 --------------------------------------------------------- */
-    /* SECT4 --------------------------------------------------------- */
     /* FOOTER --------------------------------------------------------- */
 }
 
@@ -22,8 +129,6 @@
 @media screen and (min-width:768px) {
     /* SECT1 --------------------------------------------------------- */
     /* SECT2 --------------------------------------------------------- */
-    /* SECT3 --------------------------------------------------------- */
-    /* SECT4 --------------------------------------------------------- */
     /* FOOTER --------------------------------------------------------- */
 }
 
@@ -31,7 +136,5 @@
 @media screen and (min-width:1288px) {
     /* SECT1 --------------------------------------------------------- */
     /* SECT2 --------------------------------------------------------- */
-    /* SECT3 --------------------------------------------------------- */
-    /* SECT4 --------------------------------------------------------- */
     /* FOOTER --------------------------------------------------------- */
 }
