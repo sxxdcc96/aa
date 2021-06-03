@@ -1,0 +1,23 @@
+<ul class="project">
+    <li><a href="images/popup.png" class="group1"><img src="images/list (1).jpg" alt=""></a></li>
+    <li><a href="http://sxxdcc96.dothome.co.kr/" class='iframe'><img src="images/list (2).jpg" alt=""></a></li>
+    <li><a href="https://www.youtube.com/embed/idzW8qSsjRI" class='youtube'><img src="images/list (3).jpg" alt=""></a>
+    </li>
+    <li><a href="uxui.html" class='iframe'><img src="images/list (4).jpg" alt=""></a></li>
+</ul>
+
+<script>
+    $(".group1").colorbox({
+        rel: 'group1'
+    });
+    $(".youtube").colorbox({
+        iframe: true,
+        innerWidth: 640,
+        innerHeight: 390
+    });
+    $(".iframe").colorbox({
+        iframe: true,
+        width: "80%",
+        height: "80%"
+    });
+</script>
