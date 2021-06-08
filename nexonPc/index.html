@@ -11,28 +11,40 @@
     <header></header>
     <div class="wrap">
         <section id="sect1">
-            <div class="row1 bg">
-                <div class="desc">
-                    <h3>메이플 스토리</h3>
-                    <p>모험과 재미가 가득한 2D 횡스크롤 MMORPG</p>
+            <div class="row1 container">
+                <div class="bg1">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>메이플 스토리</h3>
+                        <p>모험과 재미가 가득한 2D 횡스크롤 MMORPG</p>
+                    </div>
                 </div>
             </div>
-            <div class="row2 bg">
-                <div class="desc">
-                    <h3>던전앤파이터</h3>
-                    <p>혼돈의 오즈마 레이드 업데이트</p>
+            <div class="row2 container">
+                <div class="bg2">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>던전앤파이터</h3>
+                        <p>혼돈의 오즈마 레이드 업데이트</p>
+                    </div>
                 </div>
             </div>
-            <div class="row3 bg">
-                <div class="desc">
-                    <h3>EA SPORTS FIFA</h3>
-                    <p>축구, 그 이상을 경험할 수 있는 최고의 방법</p>
+            <div class="row3 container">
+                <div class="bg3">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>EA SPORTS FIFA</h3>
+                        <p>축구, 그 이상을 경험할 수 있는 최고의 방법</p>
+                    </div>
                 </div>
             </div>
-            <div class="row4 bg">
-                <div class="desc">
-                    <h3>V4</h3>
-                    <p>대장, PC에서 기다릴게요!</p>
+            <div class="row4 container">
+                <div class="bg4">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>V4</h3>
+                        <p>대장, PC에서 기다릴게요!</p>
+                    </div>
                 </div>
             </div>
             <div class="row5">
@@ -44,34 +56,57 @@
                     <li><a href="#"><p>자주 찾는 질문 TOP5</p><span>2019-03-06</span></a></li>
                 </ul>
             </div>
-            <div class="row6 bg">
-                <div class="desc">
-                    <h3>마비노기</h3>
-                    <p>낭만이 넘치는 판타지라이프 세계로 출발!</p>
+            <div class="row6 container">
+                <div class="bg6">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>마비노기</h3>
+                        <p>낭만이 넘치는 판타지라이프 세계로 출발!</p>
+                    </div>
                 </div>
             </div>
-            <div class="row7 bg">
-                <div class="desc">
-                    <h3>카트라이더</h3>
-                    <p>크레이지레이싱 카트라이더</p>
+            <div class="row7 container">
+                <div class="bg7">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>카트라이더</h3>
+                        <p>크레이지레이싱 카트라이더</p>
+                    </div>
                 </div>
             </div>
-            <div class="row8 bg">
-                <div class="desc">
-                    <h3>서든어택</h3>
-                    <p>대한민국 FPS의 모든 재미</p>
+            <div class="row8 container">
+                <div class="bg8">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>서든어택</h3>
+                        <p>대한민국 FPS의 모든 재미</p>
+                    </div>
                 </div>
             </div>
             <div class="row9"></div>
-            <div class="row10 bg">
-                <div class="desc">
-                    <h3>바람의나라</h3>
-                    <p>당신의 플레이가 역사가 되는 MMORPG</p>
+            <div class="row10 container">
+                <div class="bg10">
+                    <div class="backBg"></div>
+                    <div class="desc">
+                        <h3>바람의나라</h3>
+                        <p>당신의 플레이가 역사가 되는 MMORPG</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="sect2"></section>
+        <section id="sect2">
+            
+        </section>
     </div>
     <footer></footer>
+
+    <script src="script/jquery-3.6.0.js"></script>
+    <script>
+        $('.bg').mouseenter(function(){
+            var idx=$(this).index()
+        }).mouseleave(function(){
+            var idx=$(this).index()
+        })
+    </script>
 </body>
 </html>
