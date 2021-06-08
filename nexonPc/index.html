@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="headerWrap">
+            <h1><a href="#"><img src="images/logo.gif" alt=""></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="wrap">
         <section id="sect1">
             <div class="row1 container">
@@ -95,17 +107,45 @@
             </div>
         </section>
         <section id="sect2">
-            
+            <article class="art1">
+                <div class="logIn">
+                    <div class="left">
+                        <input type="text" placeholder="아이디 입력">
+                        <input type="text" placeholder="비밀번호 입력">
+                    </div>
+                    <input type="submit" value="LOGIN">
+                </div>
+                <input type="checkbox">
+                <label for="chkMyGameRoom"><span>MY GAME 바로가기</span></label>
+                <input type="checkbox">
+                <label for="chksaveID"><span>아이디 저장</span></label>
+                <div class="rightMenu">
+                    <span>회원가입</span>
+                    <span>아이디 찾기</span>
+                    <span>비밀번호 찾기</span>
+                </div>
+                <div class="gps">
+                    <div class="gpsIcon"></div>
+                    <span>접속 IP</span>
+                    <span>111.118.37.130</span>
+                </div>
+            </article>
+            <article class="art2">
+                <div class="banner1"></div>
+                <div class="banner2"></div>
+                <div class="faq">
+                    <h4>FAQ TOP5</h4>
+                    <p>자주 묻는 질문과 답변을 모았습니다.</p>
+                </div>
+            </article>
         </section>
     </div>
     <footer></footer>
 
     <script src="script/jquery-3.6.0.js"></script>
     <script>
-        $('.bg').mouseenter(function(){
-            var idx=$(this).index()
-        }).mouseleave(function(){
-            var idx=$(this).index()
+        $('body').click(function(e){
+            e.preventDefault()
         })
     </script>
 </body>

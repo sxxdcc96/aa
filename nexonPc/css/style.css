@@ -10,16 +10,81 @@ body {
 }
 
 header {
-    height: 100px;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     margin-bottom: 2%;
+    border-bottom: 3px solid #000000;
 }
+
+header .headerWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1152px;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+nav {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    display: block;
+}
+
+nav ul li:nth-child(1) a {
+    background-image: url(../images/menu.gif);
+    width: 83px;
+    height: 60px;
+    background-position: 7px 0px;
+}
+
+nav ul li:nth-child(1) a:hover {
+    background-position: 0 -70px;
+}
+nav ul li:nth-child(2) a {
+    background-image: url(../images/menu.gif);
+    width: 103px;
+    height: 60px;
+    background-position: -98px 0px;
+}
+nav ul li:nth-child(2) a:hover {
+    background-position: -92px -70px;
+}
+
+nav ul li:nth-child(3) a {
+    background-image: url(../images/menu.gif);
+    width: 58px;
+    height: 60px;
+    background-position: -209px 0;
+}
+nav ul li:nth-child(3) a:hover {
+    background-position: -205px -70px;
+}
+nav ul li:nth-child(4) a {
+    background-image: url(../images/menu.gif);
+    width: 77px;
+    height: 60px;
+    background-position: -279px 0;
+}
+nav ul li:nth-child(4) a:hover {
+    background-position: -273px -70px;
+}
+
+/* HEADER --------------------------------------------------------- */
 
 .wrap {
     display: flex;
-    width: 1344px;
+    width: 1152px;
     margin: auto;
-    border: 1px solid #000;
 }
 
 
@@ -79,9 +144,9 @@ header {
 
 #sect1 .row5 {
     padding: 2%;
-    border: 1px solid #000;
     width: 410px;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 #sect1 .row5 li {
@@ -148,12 +213,113 @@ header {
 
 
 #sect2 {
-    border: 1px solid rgb(255, 0, 0);
-    width: 730px;
+    width: 552px;
+    padding: 0 10px;
+}
+
+#sect2 .logIn {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#sect2 input[type=text] {
+    width: 350px;
+    height: 60px;
+    display: block;
+    padding-left: 20px;
+}
+
+#sect2 input[type=submit] {
+    width: 139px;
+    height: 120px;
+    margin-left: 20px;
+    color: #ffffff;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#sect2 input[type=checkbox] {
+    width: 10px;
+    height: 10px;
+}
+
+#sect2 label {
+    margin-left: -5px;
+}
+
+#sect2 label span {
+    font-size: 14px;
+}
+
+#sect2 .rightMenu {
+    display: inline-block;
+    float: right;
+}
+
+#sect2 .rightMenu span {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#sect2 .rightMenu span:hover {
+    color: blue;
+}
+
+#sect2 .gps {
+    margin: 30px 0;
+    padding: 2% 5%;
+    background-color: #dcdcdc;
+}
+
+#sect2 .gpsIcon {
+    background-image: url(../images/gps.gif);
+    height: 22px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+}
+
+#sect2 .gps span {
+    margin-right: 20px;
+}
+
+#sect2 .banner1 {
+    background-image: url(../images/sect2\ \(1\).jpg);
+    padding-top: 50%;
+    background-size: cover;
+    background-position: center;
+}
+#sect2 .banner2 {
+    background-image: url(../images/sect2\ \(2\).jpg);
+    padding-top: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#sect2 .faq {
+    padding: 1% 5%;
+    background-color: rgb(56, 56, 56);
+}
+
+#sect2 h4 {
+    color: #ffffff;
+}
+
+#sect2 .faq p {
+    color: #ffffff;
+    font-size: 12px;
 }
 
 /* SECT2 --------------------------------------------------------- */
-/* SECT2 --------------------------------------------------------- */
+
+footer {
+    height: 100px;
+    background-color: #fff;
+    margin-top: 2%;
+}
 /* FOOTER --------------------------------------------------------- */
 
 /* 모바일 */
